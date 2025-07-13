@@ -4,6 +4,7 @@ import {
   Users, Bike, Phone, Mail, Zap, Globe
 } from 'lucide-react';
 
+
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
 

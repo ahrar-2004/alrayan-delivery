@@ -1,8 +1,8 @@
 {
-  "name": "tracktuk",
+  "name": "ALrayan delivery service",
   "version": "0.1.0",
   "private": true,
- "homepage": "http://tracktuk.betapixelstudio.com",
+ "homepage": "",
 
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
