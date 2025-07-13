@@ -1,8 +1,8 @@
 import React from 'react';
-import { 
-  Bike, Clock, Shield, Package, 
-  Users, Zap, Globe, CheckCircle, 
-  ArrowRight, Phone, Mail
+import {
+  Bike, Clock, Shield, Package,
+  Users, Zap, Globe, CheckCircle,
+  ArrowRight, Phone
 } from 'lucide-react';
 
 const Services = () => {
@@ -71,10 +71,10 @@ const Services = () => {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="py-16 bg-blue-50">
+      <section className="py-16 bg-[#deeaef]">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Our <span className="text-blue-600">Delivery Services</span>
+            Our <span className="text-[#3c859e]">Delivery Services</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Professional motorcycle delivery solutions across the UAE
@@ -92,33 +92,31 @@ const Services = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {mainServices.map((service, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className={`relative p-8 rounded-xl border ${
-                  service.popular 
-                    ? 'border-blue-200 bg-white shadow-lg' 
-                    : 'border-gray-200 bg-white hover:border-blue-200'
-                }`}
+                  service.popular
+                    ? 'border-[#c1dce4] bg-white shadow-lg'
+                    : 'border-gray-200 bg-white hover:border-[#3c859e]'
+                } transition-colors`}
               >
                 {service.popular && (
                   <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-medium">
+                    <span className="bg-[#3c859e] text-white px-3 py-1 rounded-full text-xs font-medium">
                       Most Popular
                     </span>
                   </div>
                 )}
-                
-                <div className="text-blue-600 mb-6">
-                  {service.icon}
-                </div>
-                
+
+                <div className="text-[#3c859e] mb-6">{service.icon}</div>
+
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
                 <p className="text-gray-600 mb-6">{service.description}</p>
-                
+
                 <ul className="space-y-3">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5 mr-3 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-[#3c859e] mt-0.5 mr-3 flex-shrink-0" />
                       <span className="text-gray-700">{feature}</span>
                     </li>
                   ))}
@@ -139,13 +137,11 @@ const Services = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {additionalServices.map((service, index) => (
-              <div 
-                key={index} 
-                className="p-6 rounded-lg bg-white border border-gray-200 hover:border-blue-200 transition-colors"
+              <div
+                key={index}
+                className="p-6 rounded-lg bg-white border border-gray-200 hover:border-[#3c859e] transition-colors"
               >
-                <div className="text-blue-600 mb-4">
-                  {service.icon}
-                </div>
+                <div className="text-[#3c859e] mb-4">{service.icon}</div>
                 <h3 className="text-lg font-medium text-gray-900 mb-2">{service.title}</h3>
                 <p className="text-gray-600">{service.description}</p>
               </div>
@@ -164,7 +160,7 @@ const Services = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/contact"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full inline-flex items-center justify-center font-medium"
+              className="bg-[#3c859e] hover:bg-[#2b677e] text-white px-8 py-3 rounded-full inline-flex items-center justify-center font-medium"
             >
               Get Quote <ArrowRight className="ml-2 h-5 w-5" />
             </a>
